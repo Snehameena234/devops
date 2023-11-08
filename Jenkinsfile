@@ -17,7 +17,7 @@ pipeline{
             }
             }
         }
-        stage('Push image to Docker Hub'){
+        stage('Push image to Kubernetes Cluster'){
             steps{
             script{
             bat 'docker login -u "snehameena20" -p "Sneha@2002" docker.io'
